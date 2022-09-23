@@ -147,7 +147,9 @@ int	main(void)
 	insert(25, &root);
 	insert(35, &root);
 
-	inorder_traversal(root);
+	printf("%d\n", height_of_bst(root));
+	printf("%d\n", height_of_bst(root->left_node));
+	printf("%d\n", height_of_bst(root->right_node));
 
 	return (0);
 }
