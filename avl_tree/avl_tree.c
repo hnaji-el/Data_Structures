@@ -32,7 +32,7 @@ int	max(int a, int b)
 
 int	height_of_node(avl_node_t* node)
 {
-	int	const	left_height = get_height(node->left_node);
+	int const	left_height = get_height(node->left_node);
 	int const	right_height = get_height(node->right_node);
 
 	return (max(left_height, right_height) + 1);
@@ -40,8 +40,8 @@ int	height_of_node(avl_node_t* node)
 
 int get_balance_factor(avl_node_t* node)
 {
-	int	const	left_height = get_height(node->left_node);
-	int	const	right_height = get_height(node->right_node);
+	int const	left_height = get_height(node->left_node);
+	int const	right_height = get_height(node->right_node);
 
 	return (left_height - right_height);
 }

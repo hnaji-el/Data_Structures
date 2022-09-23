@@ -8,7 +8,6 @@ typedef struct	avl_node_s
 	struct avl_node_s*	left_node;
 	struct avl_node_s*	right_node;
 	int		height;
-	int		balance_factor;
 }				avl_node_t;
 
 avl_node_t*	get_new_node(int data);
